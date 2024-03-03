@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #171435;
+}
+
+button,
+span {
+  display: block;
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f1f1f6;
+}
+
+.wrapper {
+  background-color: #f4f5fa;
+
+  max-width: 1308px;
+  margin: 100px auto;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 8rem;
+  border-radius: 15px;
+  box-shadow: 0 47px 57px -26px rgba(83, 83, 144, 0.14);
+}
+
+.top-section {
+  max-width: 713px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top-section h1 {
+  font-size: 3.2rem;
+  font-family: "Merriweather", "ital";
+  font-weight: 900;
+
+  max-width: 590px;
+  margin-bottom: 2.4rem;
+}
+
+.top-section p {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.bottom-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6rem;
+
+  margin-block: 5.6rem;
+  justify-content: space-evenly;
+}
+
+.bottom-section .box {
+  width: 295px;
+  padding: 4rem;
+  background-color: white;
+  border-radius: 18px;
+  z-index: 1;
+
+  box-shadow: -20px -20px 00px 0px #fffbec;
+}
+
+.bottom-section .box:nth-child(2) {
+  box-shadow: -20px -20px 00px 0px #f9ecff;
+}
+.bottom-section .box:nth-child(3) {
+  box-shadow: -20px -20px 00px 0px #eceeff;
+}
+
+.bottom-section .box p {
+  font-size: 1.8rem;
+}
+
+.bottom-section .box span {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.bottom-section .box span strong {
+  font-size: 2.4rem;
+}
+
+.bottom-section .box .text {
+  margin-block: 1.6rem;
+}
+
+.bottom-section .box .subscription-btn {
+  padding: 1.6rem 2.4rem;
+  margin-top: 4rem;
+
+  border: none;
+  background-color: #f4f5fa;
+  box-shadow: 0 4px 0 0 #e7e7fb;
+  border-radius: 50px;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.see-all-btn {
+  border: none;
+  font-size: 1.6rem;
+  background-color: #171435;
+  color: #fff;
+  padding: 1.6rem 2.4rem;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 505px) {
+  .wrapper {
+    padding: 3rem;
+
+    width: 100%;
+  }
+
+  .top-section {
+    width: 100%;
+    padding: 0;
+  }
+
+  .top-section h1 {
+    font-size: 2.8rem;
+    width: 100%;
+  }
+
+  .top-section p {
+    font-size: 1.6rem;
+  }
+}
